@@ -5,43 +5,43 @@ import { useRef } from "react";
 
 const techCategories = [
   {
-    category: "Frontend",
+    category: "Web Development",
     techs: [
       { name: "React", icon: "⚛️" },
       { name: "Next.js", icon: "▲" },
       { name: "TypeScript", icon: "TS" },
-      { name: "Tailwind CSS", icon: "🎨" },
-      { name: "Framer Motion", icon: "🎭" },
+      { name: "HTML/CSS", icon: "🎨" },
+      { name: "JavaScript", icon: "JS" },
     ],
   },
   {
-    category: "Backend",
+    category: "Development Tools",
     techs: [
-      { name: "Node.js", icon: "🟢" },
-      { name: "Express", icon: "🚂" },
-      { name: "PostgreSQL", icon: "🐘" },
-      { name: "MongoDB", icon: "🍃" },
-      { name: "GraphQL", icon: "◈" },
-    ],
-  },
-  {
-    category: "3D & Graphics",
-    techs: [
-      { name: "Three.js", icon: "🎲" },
-      { name: "WebGL", icon: "🎮" },
-      { name: "Blender", icon: "🔷" },
-      { name: "GSAP", icon: "⚡" },
-      { name: "Canvas API", icon: "🖼️" },
-    ],
-  },
-  {
-    category: "Tools & DevOps",
-    techs: [
+      { name: "VS Code", icon: "💻" },
       { name: "Git", icon: "📦" },
-      { name: "Docker", icon: "🐳" },
-      { name: "Vercel", icon: "▲" },
-      { name: "AWS", icon: "☁️" },
-      { name: "CI/CD", icon: "🔄" },
+      { name: "Browser DevTools", icon: "🔧" },
+      { name: "Canva", icon: "🎨" },
+      { name: "ChatGPT", icon: "🤖" },
+    ],
+  },
+  {
+    category: "Technical Support",
+    techs: [
+      { name: "PC Troubleshooting", icon: "🖥️" },
+      { name: "Printer Support", icon: "🖨️" },
+      { name: "Network Setup", icon: "🌐" },
+      { name: "LAN/Wi-Fi Config", icon: "📡" },
+      { name: "Cabling", icon: "🔌" },
+    ],
+  },
+  {
+    category: "Office & Productivity",
+    techs: [
+      { name: "Microsoft Office", icon: "📊" },
+      { name: "Excel", icon: "📈" },
+      { name: "Word", icon: "📝" },
+      { name: "PowerPoint", icon: "📽️" },
+      { name: "Outlook", icon: "📧" },
     ],
   },
 ];
@@ -160,9 +160,9 @@ export function TechStack() {
           className="mt-8 sm:mt-12"
         >
           <div className="p-6 sm:p-8 bg-white/[0.02] backdrop-blur-sm border border-white/10 rounded-2xl">
-            <p className="text-gray-400 text-xs sm:text-sm mb-3 sm:mb-4 text-center">Also experienced with</p>
+            <p className="text-gray-400 text-xs sm:text-sm mb-3 sm:mb-4 text-center">Soft Skills</p>
             <div className="flex flex-wrap justify-center gap-2 sm:gap-3">
-              {["Python", "Java", "C++", "Rust", "Go", "Swift", "Kotlin", "PHP"].map(
+              {["Problem-solving", "Fast learner", "Analytical thinking", "Team collaboration", "Communication", "Time management", "Adaptability", "Attention to detail"].map(
                 (lang, i) => (
                   <motion.span
                     key={lang}

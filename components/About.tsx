@@ -7,26 +7,26 @@ import { useRef } from "react";
 const skills = [
   {
     icon: Code2,
-    title: "Web Development",
-    description: "Full stack development with React, Next.js, Node.js, and modern frameworks",
+    title: "AI-Assisted Development",
+    description: "Frontend and backend development with AI-assisted tools, building web-based systems and applications",
     gradient: "from-blue-500 to-cyan-500",
   },
   {
     icon: Palette,
-    title: "UI/UX Design",
-    description: "Creating intuitive and beautiful user interfaces with Tailwind CSS and Framer Motion",
+    title: "Software Testing",
+    description: "Software testing and debugging to ensure quality and reliability of applications",
     gradient: "from-purple-500 to-pink-500",
   },
   {
     icon: Zap,
-    title: "Performance",
-    description: "Optimized applications with fast load times, SEO, and best practices",
+    title: "Technical Support",
+    description: "PC & printer troubleshooting, network setup (LAN, Wi-Fi), and hardware/software issue resolution",
     gradient: "from-yellow-500 to-orange-500",
   },
   {
     icon: Rocket,
     title: "Problem Solving",
-    description: "Building innovative solutions for healthcare, education, and business needs",
+    description: "Fast learner with strong analytical thinking, adaptability, and effective communication skills",
     gradient: "from-green-500 to-emerald-500",
   },
 ];
@@ -63,13 +63,13 @@ export function About() {
 
           <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-bold mb-4 sm:mb-6 px-2">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-white via-purple-200 to-pink-300">
-              About Techwise
+              About Me
             </span>
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed px-2">
-            I&apos;m a full stack developer specializing in building modern web applications.
-            With expertise in React, Next.js, and TypeScript, I create scalable solutions
-            that deliver exceptional user experiences and solve real-world problems.
+            I&apos;m an IT graduate from the University of the Immaculate Conception with a Bachelor of Science in Information Technology.
+            I specialize in AI-assisted web development, technical support, and system troubleshooting. 
+            Fast learner with strong interest in improving programming, security, and system development skills.
           </p>
         </motion.div>
 

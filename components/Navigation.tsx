@@ -39,8 +39,7 @@ export function Navigation() {
           whileTap={{ scale: 0.95 }}
         >
           <Sparkles className="w-4 h-4 sm:w-5 sm:h-5 text-accent" />
-          <span className="hidden sm:inline">Techwise</span>
-          <span className="sm:hidden">TW</span>
+          <span>Lor</span>
         </motion.a>
 
         <ul className="flex gap-3 sm:gap-6 md:gap-8">

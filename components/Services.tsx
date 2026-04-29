@@ -7,33 +7,33 @@ import { useRef } from "react";
 const services = [
   {
     icon: Code2,
-    title: "Web Development",
-    description: "Building responsive, scalable web applications with React, Next.js, and TypeScript",
-  },
-  {
-    icon: Palette,
-    title: "UI/UX Design",
-    description: "Creating beautiful, intuitive interfaces with Tailwind CSS and modern design principles",
-  },
-  {
-    icon: Rocket,
-    title: "Full-Stack Development",
-    description: "End-to-end solutions from database design to deployment and maintenance",
-  },
-  {
-    icon: Globe,
-    title: "API Integration",
-    description: "Seamless integration with third-party services and building custom REST APIs",
+    title: "AI-Assisted Web Development",
+    description: "Building web-based systems with AI-assisted tools for frontend and backend development",
   },
   {
     icon: Sparkles,
-    title: "Healthcare Solutions",
-    description: "Specialized applications for mental health assessment and medical documentation",
+    title: "Software Testing & Debugging",
+    description: "Comprehensive testing and debugging to ensure quality and reliability of applications",
   },
   {
     icon: Zap,
-    title: "Performance Optimization",
-    description: "Fast, efficient applications with optimized code and best practices",
+    title: "Technical Support",
+    description: "System troubleshooting, network recabling, software installation, and printer troubleshooting",
+  },
+  {
+    icon: Globe,
+    title: "Network Setup",
+    description: "Basic networking setup including LAN and Wi-Fi configuration and cabling",
+  },
+  {
+    icon: Rocket,
+    title: "Healthcare Solutions",
+    description: "Specialized applications for mental health assessment and well-being monitoring systems",
+  },
+  {
+    icon: Palette,
+    title: "Dashboard Design",
+    description: "Creating real-time insights dashboards for monitoring and data visualization",
   },
 ];
 

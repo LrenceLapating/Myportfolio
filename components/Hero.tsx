@@ -18,7 +18,7 @@ export function Hero() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
           >
-            Hello, I&apos;m Techwise
+            Hello, I&apos;m Marc Laurence A. Lapating
           </motion.p>
 
           <motion.h1
@@ -27,12 +27,8 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
           >
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-white via-blue-200 to-purple-300">
-              Full Stack
-            </span>
-            <br />
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400">
-              Developer
+              Vibe Coder
             </span>
           </motion.h1>
 
@@ -42,7 +38,8 @@ export function Hero() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
           >
-            Building innovative web solutions with modern technologies and best practices
+            IT graduate with experience in AI-assisted system development and technical support. 
+            Skilled in building web-based systems and troubleshooting hardware/software issues.
           </motion.p>
 
           <motion.div
@@ -64,9 +61,9 @@ export function Hero() {
             <motion.div className="flex gap-2 sm:gap-3">
               {[
                 { icon: Github, href: "https://github.com", label: "GitHub" },
-                { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
+                { icon: Linkedin, href: "https://www.linkedin.com/in/marc-laurence-lapating-00026519/", label: "LinkedIn" },
                 { icon: Facebook, href: "https://www.facebook.com/profile.php?id=61575056012987", label: "Facebook" },
-                { icon: Mail, href: "mailto:hello@example.com", label: "Email" },
+                { icon: Mail, href: "mailto:laurencelapating@gmail.com", label: "Email" },
               ].map((social, i) => {
                 const Icon = social.icon;
                 return (

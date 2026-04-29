@@ -6,9 +6,9 @@ import { useRef } from "react";
 
 const socialLinks = [
   { icon: Github, href: "https://github.com", label: "GitHub", color: "hover:text-purple-400" },
-  { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn", color: "hover:text-blue-400" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/marc-laurence-lapating-00026519/", label: "LinkedIn", color: "hover:text-blue-400" },
   { icon: Facebook, href: "https://www.facebook.com/profile.php?id=61575056012987", label: "Facebook", color: "hover:text-blue-500" },
-  { icon: Mail, href: "mailto:hello@example.com", label: "Email", color: "hover:text-pink-400" },
+  { icon: Mail, href: "mailto:laurencelapating@gmail.com", label: "Email", color: "hover:text-pink-400" },
 ];
 
 export function Contact() {
@@ -55,7 +55,7 @@ export function Contact() {
           </p>
 
           <motion.a
-            href="mailto:hello@example.com"
+            href="mailto:laurencelapating@gmail.com"
             className="inline-flex items-center gap-2 sm:gap-3 bg-gradient-to-r from-accent via-purple-600 to-pink-600 text-white px-6 sm:px-10 py-3 sm:py-5 rounded-full text-base sm:text-lg font-medium mb-12 sm:mb-16 cursor-pointer shadow-2xl shadow-accent/50"
             whileHover={{ scale: 1.05, boxShadow: "0 25px 50px rgba(37, 99, 235, 0.5)" }}
             whileTap={{ scale: 0.95 }}
@@ -98,7 +98,7 @@ export function Contact() {
           className="mt-16 sm:mt-24 pt-6 sm:pt-8 border-t border-white/10"
         >
           <p className="text-gray-500 text-xs sm:text-sm px-2">
-            © {new Date().getFullYear()} Techwise. Built with Next.js & Framer Motion
+            © {new Date().getFullYear()} Marc Laurence A. Lapating. Built with Next.js & Framer Motion
           </p>
         </motion.div>
       </div>

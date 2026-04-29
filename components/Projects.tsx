@@ -7,10 +7,10 @@ import { useRef } from "react";
 
 const projects = [
   {
-    title: "EUNOIA",
-    description: "Psychological automated test with accurate scoring and AI prevention system for mental health assessment",
+    title: "EUNOIA - Psychological Well-Being Assessment System",
+    description: "Built AI-assisted web-based well-being assessment platform. Automated scoring and interpretation of psychological survey results. Designed dashboard for real-time insights and monitoring. Improved efficiency of mental health screening in schools.",
     image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80",
-    tags: ["Next.js", "AI", "TypeScript", "Mental Health"],
+    tags: ["AI", "Web Development", "Dashboard", "Mental Health"],
     github: "#",
     live: "https://eunoia.uic.edu.ph/",
     gradient: "from-blue-500/20 to-purple-500/20",
