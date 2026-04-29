@@ -27,8 +27,8 @@ const services = [
   },
   {
     icon: Rocket,
-    title: "Healthcare Solutions",
-    description: "Specialized applications for mental health assessment and well-being monitoring systems",
+    title: "Web Application Development",
+    description: "Building modern web applications with responsive design and user-friendly interfaces",
   },
   {
     icon: Palette,

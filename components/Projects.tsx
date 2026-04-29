@@ -9,7 +9,7 @@ const projects = [
   {
     title: "EUNOIA - Psychological Well-Being Assessment System",
     description: "Built AI-assisted web-based well-being assessment platform. Automated scoring and interpretation of psychological survey results. Designed dashboard for real-time insights and monitoring. Improved efficiency of mental health screening in schools.",
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80",
+    image: "/eunoia.png",
     tags: ["AI", "Web Development", "Dashboard", "Mental Health"],
     github: "#",
     live: "https://eunoia.uic.edu.ph/",
@@ -18,7 +18,7 @@ const projects = [
   {
     title: "NURSESCRIPT",
     description: "Nurse typing test with integrated hearing test to evaluate and improve nursing documentation skills",
-    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80",
+    image: "/nursescript.png",
     tags: ["React", "TypeScript", "Healthcare", "Testing"],
     github: "#",
     live: "https://nursescript.uic.edu.ph/",
@@ -27,7 +27,7 @@ const projects = [
   {
     title: "BEING SUITES",
     description: "A landing page for Being Suites showcasing all available amenities and inquiry information for potential guests",
-    image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
+    image: "/being-suites.png",
     tags: ["Next.js", "Tailwind", "Landing Page", "Hospitality"],
     github: "#",
     live: "https://being-suites.vercel.app/",
@@ -36,7 +36,7 @@ const projects = [
   {
     title: "ASA KA GO",
     description: "Jeepney routes navigation system helping commuters find the best routes and transportation options in the city",
-    image: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=800&q=80",
+    image: "/asa-ka-go.png",
     tags: ["Next.js", "Maps API", "Navigation", "Transportation"],
     github: "#",
     live: "https://asa-ka-go.vercel.app/",
@@ -54,12 +54,12 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
       initial={{ opacity: 0, y: 50 }}
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
       transition={{ duration: 0.6, delay: index * 0.1 }}
-      className="group relative h-[400px] sm:h-[450px] md:h-[500px]"
+      className="group relative min-h-[400px] sm:h-[450px] md:h-[500px]"
     >
       <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} rounded-2xl`} />
       
-      <div className="relative h-full rounded-2xl overflow-hidden border border-white/10 hover:border-white/30 transition-all duration-300 bg-black/40 backdrop-blur-sm">
-        <div className="relative h-48 sm:h-56 md:h-64 overflow-hidden">
+      <div className="relative h-full rounded-2xl overflow-hidden border border-white/10 hover:border-white/30 transition-all duration-300 bg-black/40 backdrop-blur-sm flex flex-col">
+        <div className="relative h-40 sm:h-48 md:h-56 overflow-hidden flex-shrink-0">
           <Image
             src={project.image}
             alt={project.title}
@@ -69,41 +69,44 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
         </div>
 
-        <div className="p-4 sm:p-6 md:p-8">
-          <h3 className="text-xl sm:text-2xl md:text-3xl font-heading font-bold text-white mb-2 sm:mb-3">
+        <div className="p-4 sm:p-6 flex flex-col flex-1 overflow-hidden">
+          <h3 className="text-lg sm:text-xl md:text-2xl font-heading font-bold text-white mb-2 line-clamp-2">
             {project.title}
           </h3>
-          <p className="text-sm sm:text-base text-gray-300 mb-3 sm:mb-4">{project.description}</p>
+          <p className="text-xs sm:text-sm text-gray-300 mb-3 sm:mb-4 line-clamp-3 flex-1">
+            {project.description}
+          </p>
 
-          <div className="flex flex-wrap gap-2 mb-4 sm:mb-6">
+          <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-3 sm:mb-4">
             {project.tags.map((tag) => (
               <span
                 key={tag}
-                className="px-2 sm:px-3 py-1 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-xs sm:text-sm text-white"
+                className="px-2 sm:px-3 py-0.5 sm:py-1 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-xs text-white whitespace-nowrap"
               >
                 {tag}
               </span>
             ))}
           </div>
 
-          <div className="flex gap-2 sm:gap-3">
+          <div className="flex gap-2 sm:gap-3 mt-auto">
             <motion.a
               href={project.github}
-              className="flex items-center gap-1 sm:gap-2 px-3 sm:px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg text-white cursor-pointer text-xs sm:text-sm"
+              className="flex items-center gap-1 sm:gap-2 px-3 sm:px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg text-white cursor-pointer text-xs sm:text-sm flex-1 justify-center"
               whileHover={{ scale: 1.05, backgroundColor: "rgba(255,255,255,0.2)" }}
               whileTap={{ scale: 0.95 }}
             >
               <Github className="w-3 h-3 sm:w-4 sm:h-4" />
-              Code
+              <span className="hidden sm:inline">Code</span>
             </motion.a>
             <motion.a
               href={project.live}
-              className="flex items-center gap-1 sm:gap-2 px-3 sm:px-4 py-2 bg-gradient-to-r from-accent to-purple-600 rounded-lg text-white cursor-pointer text-xs sm:text-sm"
+              className="flex items-center gap-1 sm:gap-2 px-3 sm:px-4 py-2 bg-gradient-to-r from-accent to-purple-600 rounded-lg text-white cursor-pointer text-xs sm:text-sm flex-1 justify-center"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               <ExternalLink className="w-3 h-3 sm:w-4 sm:h-4" />
-              Live Demo
+              <span className="hidden sm:inline">Live Demo</span>
+              <span className="sm:hidden">Demo</span>
             </motion.a>
           </div>
         </div>
@@ -137,7 +140,7 @@ export function Projects() {
 
           <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-bold mb-4 sm:mb-6 px-4">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-white via-blue-200 to-purple-300">
-              My Projects
+              My Own Projects
             </span>
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-gray-400 max-w-2xl mx-auto px-4">
